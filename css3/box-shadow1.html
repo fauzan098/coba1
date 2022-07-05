@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .boxmodel1{
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto;
+            box-shadow: 5px 10px 12px rgb(5 49 6 / 75%);
+        }
+        .boxmodel2{
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto;
+            box-shadow: 00px 30px 10px -20px rgb(5 49 6 / 75%);
+            transition: 0.4s;
+        }
+        .boxmodel2:hover {
+            box-shadow: 00px 80px 10px -40px rgb(5 49 6 / 15%) ;
+            margin-top: 40px;
+        }
+        .boxmodelinset{
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto;
+            box-shadow: inset 0px 0px 5px 5px rgb(5 49 6 / 75%);
+            text-align: center;
+        }
+        .multipleshadow_boxmodel{
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto;
+            box-shadow: 5px 5px 5px rgb(5 49 6 / 75%),
+                -5px -5px 5px rgba(0, 0, 255, .5); 
+            text-align: center;    
+        }
+    </style>
+</head>
+<body>
+    <div class="boxmodel1"></div>
+    <div class="boxmodel2"></div>
+    <div class="boxmodelinset"><p>bayangan pindah ke dalam</p></div>
+    <div class="multipleshadow_boxmodel"><p>multipleshadow_boxmodel</p></div>
+
+</body>
+</html>
